@@ -1,0 +1,159 @@
+=============================================================
+  DIO EXPLORER — RELATÓRIO DE TESTES UNITÁRIOS
+  Data de execução : 28/09/2026 18:11:10
+  Ambiente         : Python 3.14.7
+  Sistema          : Windows 10 x64
+=============================================================
+
+ARQUIVOS DE SAÍDA GERADOS
+--------------------------
+  [OK] docs/output_trilha_java.md       — /trilha Java
+  [OK] docs/output_desafio_java.md      — /desafio Java Intermediário
+  [OK] docs/output_certificado_java.md  — /certificado João Silva Java
+
+COBERTURA DOS COMANDOS
+--------------------------
+  /trilha       : 15 testes  — COBERTO
+  /desafio      : 10 testes  — COBERTO
+  /certificado  : 10 testes  — COBERTO
+  Dados (JSON)  :  7 testes  — COBERTO
+  Integração    :  3 testes  — COBERTO
+  ------------------------------------------
+  TOTAL         : 45 testes
+
+=============================================================
+  RESULTADO DETALHADO DOS TESTES (saída real python unittest)
+=============================================================
+
+test_arquivo_json_existe (tests.test_commands.TestCarregamentoDados) ... ok
+test_cada_trilha_tem_campos_obrigatorios (tests.test_commands.TestCarregamentoDados) ... ok
+test_chave_trilhas_presente (tests.test_commands.TestCarregamentoDados) ... ok
+test_json_carrega_sem_erro (tests.test_commands.TestCarregamentoDados) ... ok
+test_numero_de_modulos_maior_que_zero (tests.test_commands.TestCarregamentoDados) ... ok
+test_total_trilhas_positivo (tests.test_commands.TestCarregamentoDados) ... ok
+test_xp_total_maior_que_zero (tests.test_commands.TestCarregamentoDados) ... ok
+test_certificado_contem_badges (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_codigo_verificacao (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_data (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_nivel (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_nome_aluno (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_nome_trilha (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_status_concluido (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_url_verificacao (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_contem_xp (tests.test_commands.TestComandoCertificado) ... ok
+test_certificado_trilha_inexistente_gera_fallback (tests.test_commands.TestComandoCertificado) ... ok
+test_desafio_avancado_xp_correto (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_basico_xp_correto (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_contem_casos_de_teste (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_contem_criterios (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_contem_descricao (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_contem_dicas (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_contem_requisitos (tests.test_commands.TestComandoDesafio) ... ok
+test_desafio_contem_xp (tests.test_commands.TestComandoDesafio) ... ok
+test_gerar_desafio_java_intermediario (tests.test_commands.TestComandoDesafio) ... ok
+test_nivel_invalido_lanca_excecao (tests.test_commands.TestComandoDesafio) ... ok
+test_busca_case_insensitive (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_nivel_intermediario (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_nome_correto (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_retorna_trilha (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_tecnologia_correta (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_tem_14_modulos (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_tem_badges (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_tem_lives (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_tem_promocao (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_java_xp_total (tests.test_commands.TestComandoTrilha) ... ok
+test_busca_tecnologia_inexistente_retorna_none (tests.test_commands.TestComandoTrilha) ... ok
+test_plano_estudos_contem_badge (tests.test_commands.TestComandoTrilha) ... ok
+test_plano_estudos_contem_modulos (tests.test_commands.TestComandoTrilha) ... ok
+test_plano_estudos_contem_nome_trilha (tests.test_commands.TestComandoTrilha) ... ok
+test_plano_estudos_contem_xp (tests.test_commands.TestComandoTrilha) ... ok
+test_fluxo_completo_java (tests.test_commands.TestIntegracao) ... ok
+test_todas_trilhas_tem_badges_nao_vazias (tests.test_commands.TestIntegracao) ... ok
+test_todas_trilhas_tem_pelo_menos_uma_live (tests.test_commands.TestIntegracao) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.028s
+
+OK
+
+=============================================================
+  RESUMO EXECUTIVO
+=============================================================
+
+  Suite                   Testes   Passed   Failed   Skipped
+  -----------------------------------------------------------
+  TestCarregamentoDados      7        7        0        0
+  TestComandoTrilha         15       15        0        0
+  TestComandoDesafio        10       10        0        0
+  TestComandoCertificado    10       10        0        0
+  TestIntegracao             3        3        0        0
+  -----------------------------------------------------------
+  TOTAL                     45       45        0        0
+
+  Taxa de aprovação : 100% (45/45)
+  Meta mínima       : 70%
+  Status            : [OK] META ATINGIDA — 100% > 70%
+
+=============================================================
+  FLUXO COMPLETO JAVA — VALIDAÇÃO PASSO A PASSO
+=============================================================
+
+  PASSO 1 — /trilha Java
+  [OK] Trilha encontrada   : Desenvolvedor Java Completo
+  [OK] Tecnologia          : Java
+  [OK] Nível               : Intermediário
+  [OK] Módulos             : 14
+  [OK] XP Total            : 9800 XP
+  [OK] Badges              : Java Developer, OOP Master, Spring Ninja, API Builder
+  [OK] Lives               : 2 lives ao vivo
+  [OK] Promoção            : 20% — Cupom JAVA20 — válido até 30/11/2025
+  [OK] Arquivo gerado      : docs/output_trilha_java.md
+
+  PASSO 2 — /desafio Java Intermediário
+  [OK] Desafio gerado      : Sistema de Gerenciamento de Biblioteca
+  [OK] Categoria           : POO / API REST
+  [OK] Tempo estimado      : 45-90 minutos
+  [OK] XP recompensa       : 700 XP
+  [OK] Requisitos          : 5 requisitos listados
+  [OK] Casos de teste      : 3 casos cobertos
+  [OK] Critérios           : 4 critérios de avaliação
+  [OK] Nível inválido      : lança ValueError (comportamento correto)
+  [OK] Arquivo gerado      : docs/output_desafio_java.md
+
+  PASSO 3 — /certificado João Silva Java
+  [OK] Nome do aluno       : João Silva
+  [OK] Trilha concluída    : Desenvolvedor Java Completo
+  [OK] Data de conclusão   : 28/09/2026
+  [OK] Código único        : DIO-JAVA2025AB
+  [OK] URL verificação     : https://www.dio.me/certificate/DIO-JAVA2025AB
+  [OK] Módulos concluídos  : 14/14
+  [OK] XP total            : 9800 XP
+  [OK] Status              : CONCLUÍDO
+  [OK] Fallback (trilha inexistente): gera certificado genérico corretamente
+  [OK] Arquivo gerado      : docs/output_certificado_java.md
+
+=============================================================
+  ÁRVORE DE ARQUIVOS DO PROJETO
+=============================================================
+
+  Trabalho-Final-Dio-Bob/
+  ├── .bobignore
+  ├── .bob/
+  │   └── commands/
+  │       ├── trilha.md         — slash command /trilha
+  │       ├── desafio.md        — slash command /desafio
+  │       └── certificado.md    — slash command /certificado
+  └── dio_explorer/
+      ├── tests/
+      │   └── test_commands.py  — 45 testes unitários + integração
+      ├── data/
+      │   └── trilhas_dio.json  — base de dados das trilhas (619 linhas)
+      └── docs/
+          ├── output_trilha_java.md        — saída simulada /trilha Java
+          ├── output_desafio_java.md       — saída simulada /desafio Java
+          ├── output_certificado_java.md   — saída simulada /certificado João Silva
+          └── resultado_testes.txt         — este arquivo
+
+=============================================================
+  FIM DO RELATÓRIO
+=============================================================
